@@ -2,8 +2,7 @@
   "version": 2,
   "functions": {
     "api/**/*.php": {
-    "runtime": "vercel-php@0.7.4"
-      
+     "runtime": "vercel-php@0.7.4"
     }
   },
   "routes": [
@@ -11,5 +10,26 @@
       "src": "/(.*)",
       "dest": "/api/index.php"
     }
-  ]
+  ],
+  "builds": [
+    {
+      "src": "composer.json",
+      "use": "@vercel/php",
+      "config": {
+        "installCommand": "composer install --no-dev --optimize-autoloader"
+      }
+    }
+  ],
+  "env": {
+    "APP_ENV": "production",
+    "APP_DEBUG": "false",
+    "DB_HOST": "your-remote-db-endpoint.com",
+    "DB_USER": "@db_username",
+    "DB_PASSWORD": "@db_password",
+    "APP_KEY": "@app_key",
+    "CACHE_DRIVER": "file",
+    "LOG_CHANNEL": "stderr",
+    "SESSION_DRIVER": "cookie",
+    "VIEW_COMPILED_PATH": "/tmp/views" 
+  }
 }
