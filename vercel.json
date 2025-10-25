@@ -15,7 +15,7 @@
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
-   " DB_HOST":"127.0.0.1",
+    "APP_URL":"http://localhost:8000",
     "APP_KEY": "=base64:okn0wylk1PrNtsGwXTijSlnbDjoHrF/NNt15WYM9S44=",
     "CACHE_DRIVER": "file",
     "LOG_CHANNEL": "stderr",
