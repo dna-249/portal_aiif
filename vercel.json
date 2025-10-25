@@ -11,15 +11,7 @@
       "dest": "/api/index.php"
     }
   ],
-  "builds": [
-    {
-      "src": "composer.json",
-      "use": "@vercel/php",
-      "config": {
-        "installCommand": "composer install --no-dev --optimize-autoloader"
-      }
-    }
-  ],
+  
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
