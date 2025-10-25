@@ -15,10 +15,8 @@
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
-    "DB_HOST": "your-remote-db-endpoint.com",
-    "DB_USER": "@db_username",
-    "DB_PASSWORD": "@db_password",
-    "APP_KEY": "@app_key",
+   " DB_HOST":"127.0.0.1",
+    "APP_KEY": "=base64:okn0wylk1PrNtsGwXTijSlnbDjoHrF/NNt15WYM9S44=",
     "CACHE_DRIVER": "file",
     "LOG_CHANNEL": "stderr",
     "SESSION_DRIVER": "cookie",
